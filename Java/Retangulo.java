@@ -1,6 +1,6 @@
 public class Retangulo {
-  public float width;
-  public float height;
+  private float width;
+  private float height;
 
   public float getWidth() {
     return width;

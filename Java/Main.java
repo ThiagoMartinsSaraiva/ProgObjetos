@@ -5,12 +5,15 @@ public class Main {
     Retangulo r = new Retangulo();
     Scanner scan = new Scanner(System.in);
     System.out.println("Enter the width: ");
-    r.width = scan.nextFloat();
+    float width = scan.nextFloat();
+    r.setWidth(width); 
     System.out.println("Enter the height: ");
-    r.height = scan.nextFloat();
-    System.out.println("Width is: " + r.width);
-    System.out.println("Height is: " + r.height);
-    System.out.println("The area is: " + r.calculateArea(r.width, r.height));
-    System.out.println("The perimeter is: " + r.calculatePerimeter(r.width, r.height));
+    float height = scan.nextFloat();
+    r.setHeight(height);
+    System.out.println("Width is: " + r.getWidth());
+    System.out.println("Height is: " + r.getHeight());
+    System.out.println("The area is: " + r.calculateArea(r.getWidth(), r.getHeight()));
+    System.out.println("The perimeter is: " + r.calculatePerimeter(r.getWidth(), r.getHeight()));
+    scan.close();
   }
 }
